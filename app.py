@@ -96,4 +96,5 @@ def get_edited_image(filename):
         return jsonify({'error': 'Edited image not found!'}), 404
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=5000)
+
